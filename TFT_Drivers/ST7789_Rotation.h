@@ -15,6 +15,16 @@
         colstart = 0;
         rowstart = 20;
       }
+      else if(_init_width == 172)
+      {
+        colstart = 34;
+        rowstart = 0;
+      }
+      else if(_init_width == 170)
+      {
+        colstart = 35;
+        rowstart = 0;
+      }
       else
       {
         colstart = 0;
@@ -38,6 +48,16 @@
       {
         colstart = 20;
         rowstart = 0;
+      }
+      else if(_init_width == 172)
+      {
+        colstart = 0;
+        rowstart = 34;
+      }
+      else if(_init_width == 170)
+      {
+        colstart = 0;
+        rowstart = 35;
       }
       else
       {
@@ -63,6 +83,16 @@
         colstart = 0;
         rowstart = 20;
       }
+      else if(_init_width == 172)
+      {
+        colstart = 34;
+        rowstart = 0;
+      }
+      else if(_init_width == 170)
+      {
+        colstart = 35;
+        rowstart = 0;
+      }
       else
       {
         colstart = 0;
@@ -85,6 +115,16 @@
       {
         colstart = 20;
         rowstart = 0;
+      }
+      else if(_init_width == 172)
+      {
+        colstart = 0;
+        rowstart = 34;
+      }
+      else if(_init_width == 170)
+      {
+        colstart = 0;
+        rowstart = 35;
       }
       else
       {

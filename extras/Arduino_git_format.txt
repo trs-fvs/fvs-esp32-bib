@@ -1,1 +1,0 @@
-https://arduino.github.io/arduino-cli/1.1/library-specification/
