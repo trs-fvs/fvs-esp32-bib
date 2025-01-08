@@ -7,16 +7,17 @@
 //**************************************************************************
 // 
 
-// letzte Änderung:     27.02.2023
-// Autor:         Böhringer
+// letzte Änderung:     08.01.2025
+// Autor:         Böhringer/Tress
 
 #ifndef _FVS_H
 #define _FVS_H
 
 //#include <Arduino.h>
 //#include <inttypes.h>
-//#include "Print.h" 
+//#include "Print.h"
 #include <TFT_eSPI.h>
+#include <HAL.h>	//Bib von Löhe für Elektroniker GS
 
 #ifdef  _FVS_C
   #define TFT_EXT
