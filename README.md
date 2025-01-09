@@ -18,6 +18,7 @@ Bibliothek für den Microcontroller mit einem ESP32
   - [Interrupt Funktionen](#interrupt-funktionen)
   - [Timer Funktionen](#timer-funktionen)
   - [I2C Funktionen](#i2c-funktionen)
+- [Haftungsausschluss](#haftungsausschluss)
 
 <!-- tocstop -->
 
@@ -118,5 +119,5 @@ unter Vorlage der FVS-Bibliothek.
 
 
 
-
-Ich übernehme keine Haftung für die Bibliothek oder deren Inhalt.
+#### Haftungsausschluss
+Ich übernehme keine Verantwortung oder Haftung für mögliche Fehler oder Auslassungen in den bereitgestellten Inhalten.
