@@ -26,6 +26,73 @@ portMode	KEYWORD2
 portWrite	KEYWORD2
 portRead	KEYWORD2
 
+
+
+
+
+
+
+HAL	(KEYWORD1)
+
+# Constants (LITERAL1)
+
+PORT0		LITERAL1
+PORT1		LITERAL1
+IN		LITERAL1
+OUT		LITERAL1
+A0		LITERAL1
+A1		LITERAL1
+
+#Methods and Functions
+
+delay_ms	KEYWORD2
+delay_100us	KEYWORD2
+bit_init	KEYWORD2
+byte_init	KEYWORD2
+bit_read	KEYWORD2
+bit_write	KEYWORD2
+byte_read	KEYWORD2
+byte_write	KEYWORD2
+
+lcd_init	KEYWORD2
+lcd_clear	KEYWORD2
+lcd_setcursor	KEYWORD2
+lcd_char	KEYWORD2
+lcd_print	KEYWORD2
+lcd_byte	KEYWORD2
+lcd_int	KEYWORD2
+
+pwm_init	KEYWORD2
+pwm_start	KEYWORD2
+pwm_stop	KEYWORD2
+pwm_duty_cycle	KEYWORD2
+adc_init	KEYWORD2
+adc_in1		KEYWORD2
+adc_in2		KEYWORD2
+
+ext_interrupt_enable	KEYWORD2
+ext_interrupt_disable	KEYWORD2
+ext_interrupt1_enable	KEYWORD2
+ext_interrupt1_disable	KEYWORD2
+ext_interrupt_isr	KEYWORD2
+ext_interrupt1_isr	KEYWORD2
+ext_interrupt_init	KEYWORD2
+ext_interrupt1_init	KEYWORD2
+
+timer1ms_isr		KEYWORD2
+timer1ms_enable		KEYWORD2
+timer1ms_disable	KEYWORD2
+timer1ms_init		KEYWORD2
+
+i2c_init	KEYWORD2
+i2c_start	KEYWORD2
+i2c_write	KEYWORD2
+i2c_read	KEYWORD2
+i2c_stop	KEYWORD2
+
+
+
+
 # TFT_eSPI core library
 
 TFT_eSPI	KEYWORD1
