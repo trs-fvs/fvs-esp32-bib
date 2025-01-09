@@ -120,4 +120,4 @@ unter Vorlage der FVS-Bibliothek.
 
 
 #### Haftungsausschluss
-Ich übernehme keine Verantwortung oder Haftung für mögliche Fehler oder Auslassungen in den bereitgestellten Inhalten.
+Ich übernehme keine Verantwortung oder Haftung für mögliche Fehler, Auslassungen öder Rechtsverletzungen in den bereitgestellten Inhalten.
