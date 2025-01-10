@@ -49,7 +49,7 @@ integrierte Bibliotheken:
 https://github.com/Bodmer/TFT_eSPI/tree/V2.5.43
 Diese Bibliothek ist aufgrund von Speicherplatz Einsparung stark reduziert.
 
-## HAL Bibliothek für Elektroniker für GS
+## Bibliothek für Elektroniker für GS
 unter Vorlage der FVS-Bibliothek.
 
 ### Konstanten
