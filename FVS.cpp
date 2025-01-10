@@ -139,6 +139,8 @@ uint8_t portRead(uint8_t port)
 
 //*********************** I/O Funktionen ***********************************
 
+hw_timer_t* timer1ms = NULL;
+
 void delay_ms(uint16_t zeit)
 {
   delay(zeit);
