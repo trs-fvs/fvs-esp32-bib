@@ -5,7 +5,7 @@ Bibliothek für den Microcontroller mit einem ESP32
 
 <!-- toc -->
 
-- [WICHTIGE Hinweise](#wichtige-hinweise)
+- [WICHTIGE Hinweise](#hinweise)
 - [FVS Bibliothek](#fvs-bibliothek)
   - [Objekt für das Display](#objekt-für-das-display)
   - [Funktionen](#funktionen)
@@ -23,9 +23,21 @@ Bibliothek für den Microcontroller mit einem ESP32
 <!-- tocstop -->
 
 
-## WICHTIGE Hinweise
-Es muss das Board-Package esp32 von Espressif in der Version 2.0.17 installiert sein.
-Es darf keine neue Version des Board-Package installiert sein, sonst funktionieren einige Funktionen/Methoden nicht mehr.
+## Hinweise
+> [!IMPORTANT]
+> Es muss das Board-Package esp32 von Espressif in der Version 2.0.17 installiert sein.
+> Es darf keine neue Version des Board-Package installiert sein, sonst funktionieren einige Funktionen/Methoden nicht mehr. Insbesondere die Timer.
+
+Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
+1.0.0 -> ursprüngliche FVS-Bibliothek ohne TFT_eSPI\
+1.0.2 -> ursprüngliche FVS-Bibliothek ohne TFT_eSPI Beschreibung angepasst\
+1.1.0 -> ursprüngliche FVS-Bibliothek mit TFT_eSPI\
+1.2.0 -> gelöscht\
+1.2.1 -> gelöscht\
+2.0.0 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS\
+\
+Mehr Infos bei den Releases.
+
 
 ## FVS Bibliothek
 
