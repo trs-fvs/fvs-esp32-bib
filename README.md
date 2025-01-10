@@ -18,6 +18,7 @@ Bibliothek für den Microcontroller mit einem ESP32
   - [Interrupt Funktionen](#interrupt-funktionen)
   - [Timer Funktionen](#timer-funktionen)
   - [I2C Funktionen](#i2c-funktionen)
+- [Status Arduino](#status-arduino)
 - [Haftungsausschluss](#haftungsausschluss)
 
 <!-- tocstop -->
@@ -128,7 +129,8 @@ unter Vorlage der FVS-Bibliothek.
 - i2c_stop	
 
 
-
+## Status Arduino
+Infos über den aktuellen [Status](https://downloads.arduino.cc/libraries/logs/github.com/FoltaBozZ/fvs-esp32-bib/).
 
 
 #### Haftungsausschluss
