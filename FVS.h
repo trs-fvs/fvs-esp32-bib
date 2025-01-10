@@ -17,7 +17,8 @@
 //#include <inttypes.h>
 //#include "Print.h"
 #include <TFT_eSPI.h>
-#include "Wire.h"
+#include <Wire.h>
+#include <Temperature_LM75_Derived.h>
 
 #ifdef  _FVS_C
   #define TFT_EXT
