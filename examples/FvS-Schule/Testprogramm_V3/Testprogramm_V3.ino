@@ -1,6 +1,4 @@
-#include <Temperature_LM75_Derived.h>
-#include <TFT_eSPI.h> // Graphics and font library for ILI9341 driver chip
-#include <SPI.h>
+#include <FVS.h>
 
 #define LED0  1
 #define LED1  2
@@ -20,7 +18,7 @@
 #define T2  36
 #define POTI 39
 
-TFT_eSPI Tft = TFT_eSPI();  // Objekt erzeugen
+
 Generic_LM75 Temperature;
 unsigned char leds[8]={LED0,LED1,LED2,LED3,LED4,LED5,LED6,LED7};
 unsigned char schalter[8]={S0,S1,S2,S3,S4,T0,T1,T2};
