@@ -9,7 +9,7 @@ Bibliothek für den Microcontroller mit einem ESP32
 - [FVS Bibliothek](#fvs-bibliothek)
   - [Objekt für das Display](#objekt-für-das-display)
   - [Funktionen](#funktionen)
-- [HAL Bibliothek für Elektroniker für GS](#hal-bibliothek-für-elektroniker-für-gs)
+- [Bibliothek für Elektroniker für GS](#bibliothek-für-elektroniker-für-gs)
   - [Konstanten](#konstanten)
   - [I/O Funktionen](#i-o-funktionen)
   - [Display Funktionen](#display-funktionen)
