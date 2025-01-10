@@ -91,8 +91,6 @@ TFT_EXT uint8_t fvs_p1[8] ;//= {FVS_LED0,FVS_LED1,FVS_LED2,FVS_LED3,FVS_LED4,FVS
 #define A0 39  // GPIO39 ist A0 (Poti)
 #define A1 40  // GPIO40 ist A1
 
-hw_timer_t* timer1ms = NULL;
-
 // Prototypen von HAL Bibliothek Löhe
 
 //*********************** I/O Funktionen ***********************************
