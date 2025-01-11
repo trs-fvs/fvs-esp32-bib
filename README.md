@@ -35,6 +35,7 @@ Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 1.1.0 -> ursprüngliche FVS-Bibliothek mit TFT_eSPI\
 1.2.0 -> gelöscht\
 1.2.1 -> gelöscht\
+2.0.0 -> gelöscht\
 2.0.1 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS\
 \
 Mehr Infos bei den Releases.
