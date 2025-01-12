@@ -29,6 +29,9 @@ Bibliothek für den Microcontroller mit einem ESP32
 > Es muss das Board-Package esp32 von Espressif in der Version 2.0.17 installiert sein.
 > Es darf keine neue Version des Board-Package installiert sein, sonst funktionieren einige Funktionen/Methoden nicht mehr. Insbesondere die Timer.
 
+>[!CAUTION]
+>Die Bibliothek benötigt für den Temperatursensor zwingend die Bibliothek `I2C Temperature Sensors derived from the LM75`.
+
 Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 1.0.0 -> ursprüngliche FVS-Bibliothek ohne TFT_eSPI\
 1.0.2 -> ursprüngliche FVS-Bibliothek ohne TFT_eSPI Beschreibung angepasst\
