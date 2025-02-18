@@ -33,6 +33,8 @@
 #define FVS_FONT_SIZE 3 //Standardschriftgröße
 #define FVS_OFFSTET 0   //Offset vom oberen, linken Rank
 
+//-------- Klassen erstellen --------
+
 class Fvs_tft : public TFT_eSPI
 { 
   private:
@@ -42,6 +44,18 @@ class Fvs_tft : public TFT_eSPI
     void begin(void);   
     void setCursorCharacter(uint8_t row, uint8_t column);
     void clearDisplay(void);
+};
+
+//----- Klasse für W-LAN Verbindung -----
+class wifiIoT{
+
+  private:
+
+  public:
+
+  string SSID = "";
+  string PW = "";
+
 };
 
 //globales Objekt erzeugen
