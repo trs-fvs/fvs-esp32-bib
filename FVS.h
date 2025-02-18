@@ -18,7 +18,8 @@
 //#include "Print.h"
 #include <TFT_eSPI.h>
 #include <Wire.h>
-#include <Temperature_LM75_Derived.h>
+//#include <Temperature_LM75_Derived.h>
+//#include <WiFi.h>
 
 #ifdef  _FVS_C
   #define TFT_EXT
@@ -46,21 +47,9 @@ class Fvs_tft : public TFT_eSPI
     void clearDisplay(void);
 };
 
-//----- Klasse für W-LAN Verbindung -----
-class wifiIoT{
 
-  private:
-
-  public:
-
-  string SSID = "";
-  string PW = "";
-
-};
-
-//globales Objekt erzeugen
+//globale Objekte erzeugen
 TFT_EXT Fvs_tft Tft;
-
 
 
 //--------- PORT-Zugriff ---------
