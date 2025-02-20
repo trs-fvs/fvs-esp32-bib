@@ -18,7 +18,8 @@
 //#include "Print.h"
 #include <TFT_eSPI.h>
 #include <Wire.h>
-#include <Temperature_LM75_Derived.h>
+//#include <Temperature_LM75_Derived.h>
+//#include <WiFi.h>
 
 #ifdef  _FVS_C
   #define TFT_EXT
@@ -33,6 +34,8 @@
 #define FVS_FONT_SIZE 3 //Standardschriftgröße
 #define FVS_OFFSTET 0   //Offset vom oberen, linken Rank
 
+//-------- Klassen erstellen --------
+
 class Fvs_tft : public TFT_eSPI
 { 
   private:
@@ -44,9 +47,9 @@ class Fvs_tft : public TFT_eSPI
     void clearDisplay(void);
 };
 
-//globales Objekt erzeugen
-TFT_EXT Fvs_tft Tft;
 
+//globale Objekte erzeugen
+TFT_EXT Fvs_tft Tft;
 
 
 //--------- PORT-Zugriff ---------

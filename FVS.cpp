@@ -5,8 +5,8 @@
 //Autor:          Böhringer
 //**************************************************************************
 // 
-// letzte Änderung:     03.05.2022
-// Autor:         Böhringer
+// letzte Änderung:     08.01.2025
+// Autor:         Tress
 
 #define  _FVS_C
 
@@ -41,8 +41,7 @@ void Fvs_tft :: clearDisplay(void)
 }
 
 
-
-//--- PORT-Steuerung ------
+//--- PORT-Steuerung ------------------------------------------
 
 void portMode(uint8_t port, uint8_t mode)
 {
