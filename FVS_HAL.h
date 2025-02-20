@@ -14,6 +14,10 @@
 #ifndef _FVS_HAL_H
 #define _FVS_HAL_H
 
+#include "Arduino.h"
+#include "FVS_TFT.h"
+#include "Wire.h"
+
 //===========================================================================
 // Definitionen von HAL Bibliothek Löhe
 
@@ -88,3 +92,5 @@ uint8_t i2c_read(uint8_t value);
 void i2c_stop(void);
 
 //*********************** RS232 Funktionen ***********************************
+
+#endif

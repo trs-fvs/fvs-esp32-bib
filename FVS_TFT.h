@@ -16,7 +16,6 @@
 
 #include "TFT_eSPI.h"
 
-
 #ifdef  _FVS_TFT_C
   #define TFT_EXT
 #else
@@ -46,3 +45,5 @@ class Fvs_tft : public TFT_eSPI
 
 //globale Objekte erzeugen
 TFT_EXT Fvs_tft Tft;
+
+#endif
