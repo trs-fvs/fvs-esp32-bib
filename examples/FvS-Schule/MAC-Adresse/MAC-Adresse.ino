@@ -1,3 +1,9 @@
+/*********************************************************
+Anzeigen der MAC-Adressen vom Schul uController
+
+Tress Constantin 18. Feb 2025
+*********************************************************/
+
 #include <FVS.h>
 //#include <WiFi.h>
 
