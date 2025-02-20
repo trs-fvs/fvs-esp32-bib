@@ -1,17 +1,16 @@
 /***************************************************************************
  * Ferdinand von Steinbeis-Schule Reutlingen
  * 
- * Leer, da die Header-Datei nur zur Übersicht und einbinden weiterer Bibliotheken dient
+ * W-LAN und mqtt Klassen Funktionen
  * 
- * Autor: Böhringer
- * Datum: 03.05.2022
+ * Autor: Tress
+ * Datum: 20.02.2025
  * 
  * Bearbeitet: Tress
- * Datum: 20.02.2025
+ * Datum: 
  * 
 ***************************************************************************/
 
+#define  _FVS_WIFI_C
 
-#define  _FVS_C
-
-#include "FVS.h"
+#include "FVS_WIFI.h"

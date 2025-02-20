@@ -5,7 +5,7 @@ Tress Constantin 18. Feb 2025
 *********************************************************/
 
 #include <FVS.h>
-//#include <WiFi.h>
+#include <WiFi.h>
 
 void setup() {
   Tft.begin();
