@@ -1,8 +1,4 @@
-//#include <SPI.h>
-
-//#include <Temperature_LM75_Derived.h>
-
-// einbinden der FVS Bibliothek
+// einbinden der Bibliotheken
 #include "FVS.h"
 #include "Temperature_LM75_Derived.h"
 
