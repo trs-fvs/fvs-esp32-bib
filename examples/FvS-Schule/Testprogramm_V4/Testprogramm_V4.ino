@@ -3,7 +3,8 @@
 //#include <Temperature_LM75_Derived.h>
 
 // einbinden der FVS Bibliothek
-#include <FVS.h>
+#include "FVS.h"
+#include "Temperature_LM75_Derived.h"
 
 // Definition der Pins zu den LEDs -> Port1
 #define LED0  1
