@@ -17,15 +17,14 @@
 
 /* Einbinden offizieller Bibliotheken */
 
-//#include "Arduino.h"
-//#include "inttypes.h"
-//#include "Print.h"
 #include "Wire.h"
 //#include "Temperature_LM75_Derived.h"
 
 /* Einbinden FVS Bibliotheken */
 
-#include "FVS_TFT"
-#include "FVS_PORT"
-//#include "FVS_WIFI"
-#include "FVS_HAL"
+#include "FVS_TFT.h"
+#include "FVS_PORT.h"
+//#include "FVS_WIFI.h"
+#include "FVS_HAL.h"
+
+#endif
