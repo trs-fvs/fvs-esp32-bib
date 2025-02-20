@@ -27,5 +27,5 @@
 
 #include "FVS_TFT"
 #include "FVS_PORT"
-#include "FVS_WIFI"
+//#include "FVS_WIFI"
 #include "FVS_HAL"
