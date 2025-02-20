@@ -40,7 +40,7 @@ Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 1.2.1 -> gelöscht\
 2.0.0 -> gelöscht\
 2.0.1 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS\
-2.0.2 -> kleinere Anpassungen der Bibliotheke
+2.0.2 -> kleinere Anpassungen der Bibliothek und hinzufügen von Beipiel MAC-Adresse
 \
 Mehr Infos bei den Releases.
 
