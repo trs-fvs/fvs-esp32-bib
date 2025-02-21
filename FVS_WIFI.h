@@ -57,6 +57,6 @@ private:
 
 };
 
-WIFI_EXT fvs_wifi fvsWifi;
+WIFI_EXT fvs_wifi FvsWifi;
 
 #endif

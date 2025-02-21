@@ -1,4 +1,4 @@
-# Ferdinand-von-Steinbeis Schule Reutlingen
+s# Ferdinand-von-Steinbeis Schule Reutlingen
 Bibliothek für den Microcontroller mit einem ESP32
 
 ## Inhaltsverzeichnis:
@@ -41,8 +41,7 @@ Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 1.2.1 -> gelöscht\
 2.0.0 -> gelöscht\
 2.0.1 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS\
-2.0.2 -> kleinere Anpassungen der Bibliothek und hinzufügen von Beipiel MAC-Adresse
-3.0.0 -> Bibliotheken getrennt für bessere Übersicht
+3.0.0 -> Bibliotheken getrennt für bessere Übersicht, W-Lan Bibliothek und Beispiele hinzugefügt
 \
 Mehr Infos bei den Releases.
 
@@ -54,24 +53,46 @@ Mehr Infos bei den Releases.
 - Testprogramm_4.0
   - Hardware Test
 
-
 ## FVS Bibliothek
 
 Die Bibliothek besitzt unter anderem folgende Funktionen/Objekt:
 
-### Objekt für das Display
-Tft.
+### Objekte
+- TFT-Display
+  - `Tft.`
+- W-Lan Konfiguration
+  - `FvsWifi`
 
 ### Funktionen
 
 - portMode für die Modiwahl eines Portes
-  - portMode
+  - `portMode`
 
 - portWrite für das schreiben auf einen Port
-  - portWrite
+  - `portWrite`
 
 - portRead für das einlesen eines Ports
-  - portRead
+  - `portRead`
+
+### Methoden der Klasse `fvs_wifi`
+
+- W-Lan Name (SSID)
+  - `wlanSsid`
+
+- W-Lan Passwort
+  - `wlanPw`
+
+- mqtt Server
+  - `mqttServer`
+
+- mqtt Port
+  - `mqttPort`
+
+- mqtt Benutzer
+  - `mqttUser`
+
+- mqtt Passwort
+  - `mqttPw`
 
 integrierte Bibliotheken:
 https://github.com/Bodmer/TFT_eSPI/tree/V2.5.43
