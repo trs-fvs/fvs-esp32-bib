@@ -34,16 +34,24 @@
 class fvs_wifi{
 public:
 
+//Variablen
 char *fvsWifi_ssid;
 char *fvsWifi_pw;
 char *mqtt_server;
 int mqtt_port;
+char* mqtt_user;
+char* mqtt_pw;
 
-fvs_wifi(char* ssid = "FVS-MPSK", char* pw = "iotatfvs", char* server = "10.190.2.13", int port = 1883); //Konstruktor mit Standard initialisierung
+//Konstruktor mit Standardwerte
+fvs_wifi(char* ssid = "FVS-MPSK", char* pw = "iotatfvs", char* server = "10.190.2.13", int port = 1883, char* user = "", char* key = ""); //Konstruktor mit Standard initialisierung
+
+//Methoden Prototypen für Rückgabe der Werte
 char* wlanSsid(void);
 char* wlanPw(void);
 char* mqttServer(void);
 int mqttPort(void);
+char* mqttUser(void);
+char* mqttPw(void);
 
 private:
 
