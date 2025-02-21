@@ -14,9 +14,9 @@
 #ifndef _FVS_HAL_H
 #define _FVS_HAL_H
 
-#include "Arduino.h"
+#include <Arduino.h>
 #include "FVS_TFT.h"
-#include "Wire.h"
+#include <Wire.h>
 
 //===========================================================================
 // Definitionen von HAL Bibliothek Löhe
