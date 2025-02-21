@@ -9,6 +9,12 @@
  * Bearbeitet: Tress
  * Datum:
  * 
+ * Standartdefinition für Verbindung in der Schule:
+ * W-Lan SSID: FVS-MPSK
+ * Password: iotatfvs
+ * mqtt-Server: 10.190.2.13 oder mqtt01.pn.steinbeis.schule, nur innerhalb des Schulnetztes erreichbar
+ * mqtt-Port: 1883
+ * 
 ***************************************************************************/
 
 #ifndef _FVS_WIFI_H
@@ -20,18 +26,29 @@
   #define WIFI_EXT extern
 #endif
 
-#include "WiFi.h"
-//#include "PubSubClient.h" //Bibliothek für mqtt Verbindung
-//#include "ArduinoJson.h" //Bibliothek für JSON Formatierung
-//#include "ArduinoJson.hpp" //Bibliothek für JSON Formatierung
+#include <WiFi.h>
+//#include <PubSubClient.h> //Bibliothek für mqtt Verbindung
+//#include <ArduinoJson.h> //Bibliothek für JSON Formatierung
+//#include <ArduinoJson.hpp> //Bibliothek für JSON Formatierung
 
-/*
-const char *fvsWifi_ssid = "MPSK";
-const char *fvsWifi_pw = "iotatfvs";
-const char *mqtt_server = "10.190.2.13";
-const char *topic_sub = "A134/esp32/leds";
-const char *topic_pub = "A134/esp32/temperature";
-const int mqtt_port = 1883;
-*/
+class fvs_wifi{
+public:
+
+char *fvsWifi_ssid;
+char *fvsWifi_pw;
+char *mqtt_server;
+int mqtt_port;
+
+fvs_wifi(char* ssid = "FVS-MPSK", char* pw = "iotatfvs", char* server = "10.190.2.13", int port = 1883); //Konstruktor mit Standard initialisierung
+char* wlanSsid(void);
+char* wlanPw(void);
+char* mqttServer(void);
+int mqttPort(void);
+
+private:
+
+};
+
+WIFI_EXT fvs_wifi fvsWifi;
 
 #endif
