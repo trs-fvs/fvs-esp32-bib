@@ -31,6 +31,13 @@
 //#include <ArduinoJson.h> //Bibliothek für JSON Formatierung
 //#include <ArduinoJson.hpp> //Bibliothek für JSON Formatierung
 
+#define WIFI_SSID "FVS-MPSK"
+#define WIFI_PW "iotatfvs"
+#define MQTT_SERVER "10.190.2.13"
+#define MQTT_PORT 1883
+#define MQTT_USER ""
+#define MQTT_KEY ""
+
 class fvs_wifi{
 public:
 
@@ -43,7 +50,7 @@ char* mqtt_user;
 char* mqtt_pw;
 
 //Konstruktor mit Standardwerte
-fvs_wifi(char* ssid = "FVS-MPSK", char* pw = "iotatfvs", char* server = "10.190.2.13", int port = 1883, char* user = "", char* key = ""); //Konstruktor mit Standard initialisierung
+fvs_wifi(char* ssid = WIFI_SSID, char* pw = WIFI_PW, char* server = MQTT_SERVER, int port = MQTT_PORT, char* user = MQTT_USER, char* key = MQTT_KEY); //Konstruktor mit Standard initialisierung
 
 //Methoden Prototypen für Rückgabe der Werte
 char* wlanSsid(void);
@@ -57,6 +64,6 @@ private:
 
 };
 
-WIFI_EXT fvs_wifi FvsWifi;
+WIFI_EXT fvs_wifi fvsWifi;
 
 #endif
