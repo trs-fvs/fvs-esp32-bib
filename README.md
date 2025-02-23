@@ -55,11 +55,11 @@ Mehr Infos bei den Releases.
 
 ## FVS Bibliothek
 
-Die Bibliothek besitzt unter anderem folgende Funktionen/Objekt:
+Die Bibliothek besitzt unter anderem folgende Funktionen/Objekte:
 
 ### Objekte
 - TFT-Display
-  - `Tft.`
+  - `Tft`
 - W-Lan Konfiguration
   - `FvsWifi`
 
@@ -112,57 +112,57 @@ unter Vorlage der FVS-Bibliothek.
 
 ### Methoden und Funktionen
 #### I-O Funktionen
-- delay_ms	
-- delay_100us	
-- bit_init	
-- byte_init	
-- bit_read	
-- bit_write	
-- byte_read	
-- byte_write	
+- delay_ms
+- delay_100us
+- bit_init
+- byte_init
+- bit_read
+- bit_write
+- byte_read
+- byte_write
 
 #### Display Funktionen
-- lcd_init	
-- lcd_clear	
-- lcd_setcursor	
-- lcd_char	
-- lcd_print	
-- lcd_byte	
-- lcd_int	
+- lcd_init
+- lcd_clear
+- lcd_setcursor
+- lcd_char
+- lcd_print
+- lcd_byte
+- lcd_int
 
 #### PWM Funktionen
-- pwm_init	
-- pwm_start	
-- pwm_stop	
+- pwm_init
+- pwm_start
+- pwm_stop
 - pwm_duty_cycle
 
 #### ADC Funktionen
-- adc_init	
+- adc_init
 - adc_in1		
 - adc_in2		
 
 #### Interrupt Funktionen
-- ext_interrupt_enable	
-- ext_interrupt_disable	
-- ext_interrupt1_enable	
-- ext_interrupt1_disable	
-- ext_interrupt_isr	
-- ext_interrupt1_isr	
-- ext_interrupt_init	
-- ext_interrupt1_init	
+- ext_interrupt_enable
+- ext_interrupt_disable
+- ext_interrupt1_enable
+- ext_interrupt1_disable
+- ext_interrupt_isr
+- ext_interrupt1_isr
+- ext_interrupt_init
+- ext_interrupt1_init
 
 #### Timer Funktionen
 - timer1ms_isr		
 - timer1ms_enable		
-- timer1ms_disable	
+- timer1ms_disable
 - timer1ms_init		
 
 #### I2C Funktionen
-- i2c_init	
-- i2c_start	
-- i2c_write	
-- i2c_read	
-- i2c_stop	
+- i2c_init
+- i2c_start
+- i2c_write
+- i2c_read
+- i2c_stop
 
 
 ## Status Arduino
