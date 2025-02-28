@@ -58,30 +58,18 @@ void loop() {
   }
   client.loop();
 
-
-  StaticJsonDocument<80> doc;  //JSON Dokument erstellen mit 80 Byte
-  char output[80];             //Ausgangsstring mit 80 Zeichen deklarieren
-
   //Warten mit Datensenden, jede Sekunde. Kein Delay, da sonst der Empfang und die Abfrage nicht mehr vernünftig Funktioniert
   long now = millis();
   if (now - lastMsg > 1000) {
     lastMsg = now;
 
     float temperature = tempSensor.readTemperatureC();  //Temperatur vom Sensor einlesen
-                                                        /*
-    doc["t"] = temperature;  //Zuweisung der JSON Inhalte
 
-    serializeJson(doc, output);  //Inhalte zu einem JSON String konvertieren
-
-    client.publish(topic_pub, output);  //Daten "output" an mqtt Server senden
-*/
     Tft.setCursor(0, 0);
     Tft.println("Temperatur: " + String(temperature));
 
-    //wenn kein JSON String versendet wird, dann muss eine Zahl ind einen String gewandelt werden
-
     char tempString[8];  // umwandlung der Temperatur von float nach String
     dtostrf(temperature, 1, 2, tempString);
-    client.publish(topic_pub, tempString);
+    client.publish(topic_pub, tempString);//Versenden der Daten
   }
 }
