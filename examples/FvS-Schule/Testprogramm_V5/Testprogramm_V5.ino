@@ -1,6 +1,6 @@
 // einbinden der Bibliotheken
 #include "FVS.h"
-#include "Temperature_LM75_Derived.h"
+#include <Wire.h>
 
 // Definition der Pins zu den LEDs -> Port1
 #define LED0  1
@@ -24,10 +24,10 @@
 #define POTI 39
 
 
-Generic_LM75 Temperature;
+
 // Array für Ein/-Ausgänge
-unsigned char leds[8]={LED0,LED1,LED2,LED3,LED4,LED5,LED6,LED7};
-unsigned char schalter[8]={S0,S1,S2,S3,S4,T0,T1,T2};
+unsigned char leds[8] = {LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7};
+unsigned char schalter[8] = {S0, S1, S2, S3, S4, T0, T1, T2};
 
 
 void setup() {
@@ -36,18 +36,18 @@ void setup() {
   //initialisierung des Displays -> Tft.begin
   //Objekt wird in FVS-Bibliothe erstellt
   Tft.init();
-   Tft.setRotation(3);
+  Tft.setRotation(3);
   Tft.calibrateTouch(calData, TFT_MAGENTA, TFT_BLACK, 15);
   Tft.setTouch(calData);
-  Tft.fillScreen(TFT_WHITE);  
-  Tft.setTextColor(TFT_BLUE,TFT_WHITE); 
+  Tft.fillScreen(TFT_WHITE);
+  Tft.setTextColor(TFT_BLUE, TFT_WHITE);
   Tft.setTextSize(2);
- 
+
   //Mode für Ein/-Ausgänge festlegen
-  for(i=0; i<8; i++)
-  { 
-    pinMode(leds[i],OUTPUT);
-    pinMode(schalter[i],INPUT);
+  for (i = 0; i < 8; i++)
+  {
+    pinMode(leds[i], OUTPUT);
+    pinMode(schalter[i], INPUT);
   }
   Tft.fillRoundRect(46, 176, 100, 40, 10, TFT_DARKGREY);
   Wire.begin(); //I2C-Bus für LM75
@@ -63,34 +63,54 @@ void loop() {
   {
     //y=239-y;
     //+x=319-x;
-    if(x>46 && x<146)
-    { 
-        if(y >176 && y <216)
-        { 
-          Tft.fillRoundRect(46, 176, 100, 40, 10, TFT_GREEN);
-          delay(2000);
-          Tft.fillRoundRect(46, 176, 100, 40, 10, TFT_DARKGREY);
-        }
+    if (x > 46 && x < 146)
+    {
+      if (y > 176 && y < 216)
+      {
+        Tft.fillRoundRect(46, 176, 100, 40, 10, TFT_GREEN);
+        delay(2000);
+        Tft.fillRoundRect(46, 176, 100, 40, 10, TFT_DARKGREY);
+      }
     }
   }
-  
+
   //Ausgabe auf dem Display
-  Tft.setTextColor(TFT_GREEN,TFT_WHITE);
-  Tft.drawCentreString("Testprogramm",160,0,2);
+  Tft.setTextColor(TFT_GREEN, TFT_WHITE);
+  Tft.drawCentreString("Testprogramm", 160, 0, 2);
   Tft.setCursor(0, 40, 2);
-  Tft.setTextColor(TFT_BLUE,TFT_WHITE);
+  Tft.setTextColor(TFT_BLUE, TFT_WHITE);
   //Ausgabe Analogwert
-  Tft.println("AD-Wert: " + (String)analogRead(POTI)+"   ");
-  Tft.println("Spannung: " + (String)(analogRead(POTI)*3.3/4095) + "V  ");
+  Tft.println("AD-Wert: " + (String)analogRead(POTI) + "   ");
+  Tft.println("Spannung: " + (String)(analogRead(POTI) * 3.3 / 4095) + "V  ");
   //Ausgabe Zustände der Schalter
-  for(i=0; i<8; i++)
-  { 
-   digitalWrite(leds[i],digitalRead(schalter[i]));
+  for (i = 0; i < 8; i++)
+  {
+    digitalWrite(leds[i], digitalRead(schalter[i]));
   }
+
+
   //Ausgabe Temperatur
-  Tft.setTextColor(TFT_RED,TFT_WHITE); 
-  Tft.print("Temperatur: ");
-  Tft.print(Temperature.readTemperatureC());
-  Tft.println(" C  ");
- 
+  byte msb, lsb, error;
+  float temp;
+  unsigned int tmp = 0xFFFFFFFF;
+  //"0" ins Pointerregister schreiben
+  Wire.beginTransmission(0x48);
+  Wire.write(0);
+  error = Wire.endTransmission();
+  if (error == 0)
+  {
+    Wire.requestFrom(0x48, 2); //2 Bytes von LM75 anfordern
+    while (Wire.available() < 2);
+    msb = Wire.read();
+    lsb = Wire.read();
+    temp = (float)msb + (lsb >> 7) / 2.0;
+
+    Tft.setTextColor(TFT_RED, TFT_WHITE);
+    Tft.println((String)temp + " C  ");
   }
+  else
+  {
+    Tft.println("Error I2CBus LM75");
+  }
+
+}
