@@ -24,7 +24,7 @@
 
 #include "FVS_TFT.h"
 #include "FVS_PORT.h"
-//#include "FVS_WIFI.h"
+#include "FVS_WIFI.h"
 #include "FVS_HAL.h"
 
 #endif

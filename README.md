@@ -1,4 +1,4 @@
-# Ferdinand-von-Steinbeis Schule Reutlingen
+s# Ferdinand-von-Steinbeis Schule Reutlingen
 Bibliothek für den Microcontroller mit einem ESP32
 
 ## Inhaltsverzeichnis:
@@ -41,9 +41,9 @@ Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 1.2.1 -> gelöscht
 
 2.0.0 -> gelöscht\
-2.0.1 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS
-<!--2.0.2 -> kleinere Anpassungen der Bibliothek und hinzufügen von Beipiel MAC-Adresse\-->
-3.0.0 -> Bibliotheken getrennt für bessere Übersicht
+2.0.1 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS\
+3.0.0 -> Bibliotheken getrennt für bessere Übersicht, W-Lan Bibliothek und Beispiele hinzugefügt
+\
 
 Mehr Infos bei den Releases.
 
@@ -55,24 +55,46 @@ Mehr Infos bei den Releases.
 - Testprogramm_4.0
   - Hardware Test
 
-
 ## FVS Bibliothek
 
-Die Bibliothek besitzt unter anderem folgende Funktionen/Objekt:
+Die Bibliothek besitzt unter anderem folgende Funktionen/Objekte:
 
-### Objekt für das Display
-Tft.
+### Objekte
+- TFT-Display
+  - `Tft`
+- W-Lan Konfiguration
+  - `FvsWifi`
 
 ### Funktionen
 
 - portMode für die Modiwahl eines Portes
-  - portMode
+  - `portMode`
 
 - portWrite für das schreiben auf einen Port
-  - portWrite
+  - `portWrite`
 
 - portRead für das einlesen eines Ports
-  - portRead
+  - `portRead`
+
+### Methoden der Klasse `fvs_wifi`
+
+- W-Lan Name (SSID)
+  - `wlanSsid`
+
+- W-Lan Passwort
+  - `wlanPw`
+
+- mqtt Server
+  - `mqttServer`
+
+- mqtt Port
+  - `mqttPort`
+
+- mqtt Benutzer
+  - `mqttUser`
+
+- mqtt Passwort
+  - `mqttPw`
 
 integrierte Bibliotheken:
 https://github.com/Bodmer/TFT_eSPI/tree/V2.5.43
@@ -92,57 +114,57 @@ unter Vorlage der FVS-Bibliothek.
 
 ### Methoden und Funktionen
 #### I-O Funktionen
-- delay_ms	
-- delay_100us	
-- bit_init	
-- byte_init	
-- bit_read	
-- bit_write	
-- byte_read	
-- byte_write	
+- delay_ms
+- delay_100us
+- bit_init
+- byte_init
+- bit_read
+- bit_write
+- byte_read
+- byte_write
 
 #### Display Funktionen
-- lcd_init	
-- lcd_clear	
-- lcd_setcursor	
-- lcd_char	
-- lcd_print	
-- lcd_byte	
-- lcd_int	
+- lcd_init
+- lcd_clear
+- lcd_setcursor
+- lcd_char
+- lcd_print
+- lcd_byte
+- lcd_int
 
 #### PWM Funktionen
-- pwm_init	
-- pwm_start	
-- pwm_stop	
+- pwm_init
+- pwm_start
+- pwm_stop
 - pwm_duty_cycle
 
 #### ADC Funktionen
-- adc_init	
+- adc_init
 - adc_in1		
 - adc_in2		
 
 #### Interrupt Funktionen
-- ext_interrupt_enable	
-- ext_interrupt_disable	
-- ext_interrupt1_enable	
-- ext_interrupt1_disable	
-- ext_interrupt_isr	
-- ext_interrupt1_isr	
-- ext_interrupt_init	
-- ext_interrupt1_init	
+- ext_interrupt_enable
+- ext_interrupt_disable
+- ext_interrupt1_enable
+- ext_interrupt1_disable
+- ext_interrupt_isr
+- ext_interrupt1_isr
+- ext_interrupt_init
+- ext_interrupt1_init
 
 #### Timer Funktionen
 - timer1ms_isr		
 - timer1ms_enable		
-- timer1ms_disable	
+- timer1ms_disable
 - timer1ms_init		
 
 #### I2C Funktionen
-- i2c_init	
-- i2c_start	
-- i2c_write	
-- i2c_read	
-- i2c_stop	
+- i2c_init
+- i2c_start
+- i2c_write
+- i2c_read
+- i2c_stop
 
 
 ## Status Arduino

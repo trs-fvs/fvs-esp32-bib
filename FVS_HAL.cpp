@@ -1,14 +1,14 @@
 /***************************************************************************
  * Ferdinand von Steinbeis-Schule Reutlingen
- * 
+ *
  * Funktionen für Elektroniker Geräte und Systeme
- * 
+ *
  * Autor: Löhe
- * Datum: 
- * 
+ * Datum:
+ *
  * Bearbeitet: Tress
- * Datum: 20.02.2025
- * 
+ * Datum: 09.03.2025
+ *
 ***************************************************************************/
 
 #define  _FVS_HAL_C
@@ -144,11 +144,11 @@ void lcd_print(uint8_t text[])
 {
     char txt[171];
     uint8_t i;
-  
+
     for(i=0;i<170;i++)
         txt[i]=' ';
     for(i=0;i<170;i++)
-        txt[i]=text[i];       
+        txt[i]=text[i];
     txt[170]='\0';
     Tft.print(txt);
 }
@@ -202,7 +202,7 @@ uint8_t adc_in1(void)
 {
     uint8_t value;
     const int analogPin = A0;
-    
+
     value = analogRead(analogPin)/16;
     return value;
 }
@@ -211,7 +211,7 @@ uint8_t adc_in2(void)
 {
     uint8_t value;
     const int analogPin = A1;
-    
+
     value = analogRead(analogPin)/16;
     return value;
 }
@@ -262,7 +262,7 @@ void timer1ms_init(void)
 {
     timer1ms = timerBegin(0,80,true);
     timerAttachInterrupt(timer1ms,&timer1ms_isr,true);
-    timerAlarmWrite(timer1ms,10000,true);
+    timerAlarmWrite(timer1ms,1000,true);
 }
 
 //*********************** I2C Funktionen ***********************************
@@ -296,4 +296,3 @@ void i2c_stop(void)
 }
 
 //*********************** RS232 Funktionen ***********************************
-

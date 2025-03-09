@@ -21,14 +21,22 @@ FVS_T0	LITERAL1
 FVS_T1	LITERAL1
 FVS_T2	LITERAL1
 
-#Methods and Functions
-portMode	KEYWORD2
-portWrite	KEYWORD2
-portRead	KEYWORD2
+# Methods and Functions
+portMode	   KEYWORD2
+portWrite	   KEYWORD2
+portRead	   KEYWORD2
 
+wifiBegin    KEYWORD2
+wlanSsid	   KEYWORD2
+wlanPw		   KEYWORD2
+mqttServer	 KEYWORD2
+mqttPort   	 KEYWORD2
+mqttUser	   KEYWORD2
+mqttPw		   KEYWORD2
 
-
-
+# Classes
+fvsWifi KEYWORD1
+Tft     KEYWORD1
 
 
 
@@ -43,7 +51,7 @@ OUT		LITERAL1
 A0		LITERAL1
 A1		LITERAL1
 
-#Methods and Functions
+# Methods and Functions
 
 delay_ms	KEYWORD2
 delay_100us	KEYWORD2
