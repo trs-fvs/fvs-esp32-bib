@@ -38,11 +38,13 @@ Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 1.0.2 -> ursprüngliche FVS-Bibliothek ohne TFT_eSPI Beschreibung angepasst\
 1.1.0 -> ursprüngliche FVS-Bibliothek mit TFT_eSPI\
 1.2.0 -> gelöscht\
-1.2.1 -> gelöscht\
+1.2.1 -> gelöscht
+
 2.0.0 -> gelöscht\
 2.0.1 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS\
 3.0.0 -> Bibliotheken getrennt für bessere Übersicht, W-Lan Bibliothek und Beispiele hinzugefügt
 \
+
 Mehr Infos bei den Releases.
 
 ## Beispielprogeamme
