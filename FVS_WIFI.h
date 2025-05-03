@@ -10,7 +10,7 @@
 * Datum:
 *
 * Standartdefinition für Verbindung in der Schule:
-* W-Lan SSID: FVS-MPSK
+* W-Lan SSID: MPSK
 * Password: iotatfvs
 * mqtt-Server: 10.190.2.13 oder mqtt01.pn.steinbeis.schule, nur innerhalb des Schulnetztes erreichbar
 * mqtt-Port: 1883
@@ -31,7 +31,7 @@
 //#include <ArduinoJson.h> //Bibliothek für JSON Formatierung
 //#include <ArduinoJson.hpp> //Bibliothek für JSON Formatierung
 
-#define WIFI_SSID "FVS-MPSK"
+#define WIFI_SSID "MPSK"
 #define WIFI_PW "iotatfvs"
 #define MQTT_SERVER "10.190.2.13"
 #define MQTT_PORT 1883
