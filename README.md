@@ -42,8 +42,10 @@ Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 
 2.0.0 -> gelöscht\
 2.0.1 -> FVS-Bibliothek mit TFT_eSPI und Funktionen für Elektroniker GS\
-3.0.0 -> Bibliotheken getrennt für bessere Übersicht, W-Lan Bibliothek und Beispiele hinzugefügt
-\
+3.0.0 -> Bibliotheken getrennt für bessere Übersicht, W-Lan Bibliothek und Beispiele hinzugefügt\
+3.0.1 -> Beispielprogramme für TFT-Display hinzugefügt\
+4.0.0 -> neue Boardversion 3.2.X wird unterstützt, 2.X.X wird nicht mehr unterstützt\
+/
 
 Mehr Infos bei den Releases.
 
