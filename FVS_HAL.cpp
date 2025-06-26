@@ -171,9 +171,10 @@ void lcd_int(uint16_t data)
 
 void pwm_init(void)
 {
-    ledcSetup(0,10000,8);
-    ledcAttachPin(5,0);
-    ledcWrite(0,127);
+   /* ledcSetup(0,10000,8);
+    ledcAttachPin(5,0);*/
+    ledcAttach(5,10000,8);
+    ledcWrite(5,127);
 }
 
 void pwm_start(void)
@@ -182,12 +183,12 @@ void pwm_start(void)
 
 void pwm_stop(void)
 {
-    ledcDetachPin(5);
+    ledcDetach(5);
 }
 
 void pwm_duty_cycle(uint8_t value)
 {
-    ledcWrite(0,value);
+    ledcWrite(5,value);
 }
 
 
@@ -250,19 +251,22 @@ void timer1ms_isr();
 
 void timer1ms_enable(void)
 {
-    timerAlarmEnable(timer1ms);
+
+    //timerAlarmEnable(timer1ms);
+    timerRestart(timer1ms);
+    timerStart(timer1ms);
 }
 
 void timer1ms_disable(void)
 {
-    timerAlarmDisable(timer1ms);
+    timerStop(timer1ms);
 }
 
 void timer1ms_init(void)
 {
-    timer1ms = timerBegin(0,80,true);
-    timerAttachInterrupt(timer1ms,&timer1ms_isr,true);
-    timerAlarmWrite(timer1ms,1000,true);
+    timer1ms = timerBegin(1000000); //1Mhz
+    timerAttachInterrupt(timer1ms,&timer1ms_isr);
+    timerAlarm(timer1ms,1000,true,0);//1ms
 }
 
 //*********************** I2C Funktionen ***********************************
