@@ -171,7 +171,7 @@ unter Vorlage der FVS-Bibliothek.
 
 
 ## Status Arduino
-Infos über den aktuellen [Status](https://downloads.arduino.cc/libraries/logs/github.com/FoltaBozZ/fvs-esp32-bib/).
+Infos über den aktuellen [Status](https://downloads.arduino.cc/libraries/logs/github.com/trs-fvs/fvs-esp32-bib/).
 
 
 #### Haftungsausschluss
