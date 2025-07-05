@@ -27,12 +27,8 @@ Bibliothek für den Microcontroller mit einem ESP32
 
 ## Hinweise
 > [!CAUTION]
-> Es muss das Board-Package esp32 von Espressif in der Version 2.0.17 installiert sein.
 > Ab Release 4.x muss Board-Package esp32 von Espressif in der Version 3.2.x installiert sein.
 > Es darf keine neue Version des Board-Package installiert sein, sonst funktionieren einige Funktionen/Methoden nicht mehr.
-
->[!IMPORTANT]
->Die Bibliothek benötigt für den Temperatursensor zwingend die Bibliothek `I2C Temperature Sensors derived from the LM75`.
 
 Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 1.0.0 -> ursprüngliche FVS-Bibliothek ohne TFT_eSPI\
@@ -46,7 +42,7 @@ Nur die Releases verwenden, welche auch auf GitHub vorhanden sind:\
 3.0.0 -> Bibliotheken getrennt für bessere Übersicht, W-Lan Bibliothek und Beispiele hinzugefügt\
 3.0.1 -> Beispielprogramme für TFT-Display hinzugefügt\
 4.0.0 -> neue Boardversion 3.2.X wird unterstützt, 2.X.X wird nicht mehr unterstützt\
-/
+4.0.1 -> Umzug auf neue Adresse
 
 Mehr Infos bei den Releases.
 
@@ -106,73 +102,9 @@ Diese Bibliothek ist aufgrund von Speicherplatz Einsparung stark reduziert.
 ## Bibliothek für Elektroniker für GS
 unter Vorlage der FVS-Bibliothek.
 
-### Konstanten
-
-- PORT0
-- PORT1		
-- IN		
-- OUT		
-- A0		
-- A1		
-
-### Methoden und Funktionen
-#### I-O Funktionen
-- delay_ms
-- delay_100us
-- bit_init
-- byte_init
-- bit_read
-- bit_write
-- byte_read
-- byte_write
-
-#### Display Funktionen
-- lcd_init
-- lcd_clear
-- lcd_setcursor
-- lcd_char
-- lcd_print
-- lcd_byte
-- lcd_int
-
-#### PWM Funktionen
-- pwm_init
-- pwm_start
-- pwm_stop
-- pwm_duty_cycle
-
-#### ADC Funktionen
-- adc_init
-- adc_in1		
-- adc_in2		
-
-#### Interrupt Funktionen
-- ext_interrupt_enable
-- ext_interrupt_disable
-- ext_interrupt1_enable
-- ext_interrupt1_disable
-- ext_interrupt_isr
-- ext_interrupt1_isr
-- ext_interrupt_init
-- ext_interrupt1_init
-
-#### Timer Funktionen
-- timer1ms_isr		
-- timer1ms_enable		
-- timer1ms_disable
-- timer1ms_init		
-
-#### I2C Funktionen
-- i2c_init
-- i2c_start
-- i2c_write
-- i2c_read
-- i2c_stop
-
-
 ## Status Arduino
-Infos über den aktuellen [Status](https://downloads.arduino.cc/libraries/logs/github.com/FoltaBozZ/fvs-esp32-bib/).
+Infos über den aktuellen [Status](https://downloads.arduino.cc/libraries/logs/github.com/trs-fvs/fvs-esp32-bib/).
 
 
 #### Haftungsausschluss
-Ich übernehme keine Verantwortung oder Haftung für mögliche Fehler, Auslassungen öder Rechtsverletzungen in den bereitgestellten Inhalten.
+Wir übernehmen keine Verantwortung oder Haftung für mögliche Fehler, Auslassungen oder Rechtsverletzungen in den bereitgestellten Inhalten.
