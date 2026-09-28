@@ -43,6 +43,7 @@ void fvs_wifi::wifiBegin(void) {
 
   delay(10);
   // We start by connecting to a WiFi network
+  Tft.clearDisplay();
   Tft.setTextSize(2);  //Schriftgröße anpassen
   Tft.setCursorCharacter(1, 1);
   Tft.println();
